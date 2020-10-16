@@ -8,7 +8,11 @@ namespace tuseTheProgrammerWebAPI.Services
 {
     public interface IEmployeeRepo
     {
-         IEnumerable<Employee> GetEmployees();
+        IEnumerable<Employee> GetEmployees();
+        Employee GetEmployeeById(int id);
+        void CreateNewEmployee(Employee employee);
+
+        bool SaveChanges();
     }
 }
 

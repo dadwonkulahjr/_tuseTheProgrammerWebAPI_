@@ -51,9 +51,25 @@ namespace tuseTheProgrammerWebAPI.Services
                 },
             };
         }
+
+        public void CreateNewEmployee(Employee employee)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Employee GetEmployeeById(int id)
+        {
+            return _employees.FirstOrDefault(e => e.Id == id);
+        }
+
         public IEnumerable<Employee> GetEmployees()
         {
             return _employees.ToList();
+        }
+
+        public bool SaveChanges()
+        {
+            throw new NotImplementedException();
         }
     }
 }
